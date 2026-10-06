@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}关键词搜索 · PDF 工具箱{% endblock %}
+{% block content %}
+  <h1>关键词搜索</h1>
+  <div class="muted">已索引 {{ stats.documents }} 个文件，{{ stats.pages }} 页{% if stats.ocr_pages %}（其中 {{ stats.ocr_pages }} 页来自 OCR）{% endif %}
+    {% if stats.failed %}· <span class="err">{{ stats.failed }} 个读取失败</span>{% endif %}
+    {% if stats.scanned %}· {{ stats.scanned|length }} 个无文字（扫描件且未能 OCR）{% endif %}</div>
+
+  <form class="search" method="get" action="/">
+    <input type="text" name="q" value="{{ q }}" placeholder='关键词，空格分隔；"带空格的短语"；-排除词' autofocus>
+    <input type="text" class="small" name="path" value="{{ path }}" placeholder="路径包含（可选）">
+    <label class="opt"><input type="checkbox" name="mode" value="any" {% if any_mode %}checked{% endif %}>任一关键词</label>
+    <button type="submit">搜索</button>
+  </form>
+
+  {% if q %}
+    <div class="muted">{{ hits.total_docs }} 个文件匹配{% if hits.total_docs > hits|length %}（显示前 {{ hits|length }} 个）{% endif %} · {{ "%.0f"|format(elapsed) }} ms</div>
+    {% for h in hits %}
+      <div class="doc">
+        <h2><a href="/pdf/{{ h.doc_id }}#page={{ h.pages[0][0] }}" target="_blank">{{ h.path.replace('\\', '/').split('/')[-1] }}</a></h2>
+        <div class="muted">{% if h.title and h.title|lower != 'untitled' %}{{ h.title }} · {% endif %}{{ h.path }} · {{ h.n_pages }} 页匹配</div>
+        {% for page, n, sn in h.pages %}
+          <div class="hit">
+            <div class="pg"><a href="/pdf/{{ h.doc_id }}#page={{ page }}" target="_blank">第 {{ page }} 页</a></div>
+            <div class="snip">{% for s in sn[:2] %}<div>{% for t, m in s %}{% if m %}<mark>{{ t }}</mark>{% else %}{{ t }}{% endif %}{% endfor %}</div>{% endfor %}</div>
+          </div>
+        {% endfor %}
+        {% if h.n_pages > h.pages|length %}<div class="muted">还有 {{ h.n_pages - h.pages|length }} 页匹配</div>{% endif %}
+      </div>
+    {% else %}
+      <p>没有找到匹配的内容。</p>
+    {% endfor %}
+  {% endif %}
+
+  <details {% if not stats.documents %}open{% endif %}>
+    <summary>批量导入 PDF</summary>
+    <p class="muted">已导入且未改动的文件会自动跳过，可以反复导入同一个文件夹。扫描件会自动 OCR（需安装 Tesseract），速度约每页 2–4 秒。</p>
+    <div class="row">
+      <input type="text" id="folder" placeholder="本机文件夹路径，例如 D:\资料 或 /home/me/papers">
+      <button class="ghost" onclick="go(startFolder('/index'))">导入文件夹</button>
+    </div>
+    <div class="row">
+      <input type="file" id="files" accept=".pdf" multiple>
+      <button class="ghost" onclick="go(startUpload('/index', 'files', null, say))">上传文件</button>
+      <input type="file" id="dir" webkitdirectory multiple style="display:none" onchange="go(startUpload('/index', 'dir', null, say))">
+      <button class="ghost" onclick="document.getElementById('dir').click()">上传整个文件夹</button>
+    </div>
+    <div id="job" class="muted"></div>
+    <progress id="bar" value="0" max="1" hidden></progress>
+  </details>
+
+  {% if stats.errors or stats.scanned %}
+  <details>
+    <summary>问题文件</summary>
+    {% for e in stats.errors %}<div class="err">{{ e.path }}：{{ e.error }}</div>{% endfor %}
+    {% for s in stats.scanned %}<div>{{ s.path }}（{{ s.n_pages }} 页无文字）</div>{% endfor %}
+  </details>
+  {% endif %}
+{% endblock %}
+{% block script %}
+<script>
+const job = document.getElementById('job'), bar = document.getElementById('bar');
+const say = t => { job.textContent = t; };
+async function go(started) {
+  const res = await started;
+  if (!res) return;
+  if (!res.ok) { say(res.message || '已有导入任务在运行'); return; }
+  bar.hidden = false;
+  poll('/index', s => {
+    bar.max = Math.max(s.total, 1); bar.value = s.done;
+    say(s.total ? `处理中 ${s.done}/${s.total}：${s.current}` : '扫描文件…');
+  }, r => {
+    bar.hidden = true;
+    say(r.error ? `导入失败：${r.error}` :
+      `完成：找到 ${r.found} 个，新导入 ${r.indexed} 个（${r.pages} 页，OCR ${r.ocr_pages} 页），` +
+      `未变化 ${r.unchanged} 个，失败 ${r.failed} 个，用时 ${r.seconds} 秒。刷新页面即可搜索。`);
+  });
+}
+</script>
+{% endblock %}

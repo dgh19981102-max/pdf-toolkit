@@ -1,0 +1,1408 @@
+[
+ {
+  "file": "invoice_01.pdf",
+  "template": "cn_classic",
+  "scanned": false,
+  "invoice_no": "48552728",
+  "date": "2026-02-02",
+  "seller": "星河示例科技有限公司",
+  "buyer": "安澜模拟电子有限公司",
+  "currency": "CNY",
+  "subtotal": 34631.0,
+  "tax_rate": 0.13,
+  "tax": 4502.03,
+  "total": 39133.03,
+  "items": [
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 12,
+    "unit_price": 300,
+    "amount": 3600
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 12,
+    "unit_price": 1899,
+    "amount": 22788
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 4,
+    "unit_price": 1299,
+    "amount": 5196
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 1,
+    "unit_price": 389,
+    "amount": 389
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 2,
+    "unit_price": 389,
+    "amount": 778
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 34631.0,
+   "tax": 4502.03,
+   "total": 39133.03
+  }
+ },
+ {
+  "file": "invoice_02.pdf",
+  "template": "en_modern",
+  "scanned": false,
+  "invoice_no": "INV-2026-5786",
+  "date": "2026-05-22",
+  "seller": "Bluepeak Sample Systems Inc.",
+  "buyer": "Fabrikam Sample Trading",
+  "currency": "USD",
+  "subtotal": 6694.5,
+  "tax_rate": 0.06,
+  "tax": 401.67,
+  "total": 7096.17,
+  "items": [
+   {
+    "desc": "USB-C dock",
+    "qty": 6,
+    "unit_price": 149.5,
+    "amount": 897.0
+   },
+   {
+    "desc": "27-inch monitor",
+    "qty": 10,
+    "unit_price": 219,
+    "amount": 2190
+   },
+   {
+    "desc": "Network cable 50m",
+    "qty": 10,
+    "unit_price": 38,
+    "amount": 380
+   },
+   {
+    "desc": "Consulting (hours)",
+    "qty": 2.5,
+    "unit_price": 95,
+    "amount": 237.5
+   },
+   {
+    "desc": "USB-C dock",
+    "qty": 20,
+    "unit_price": 149.5,
+    "amount": 2990.0
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 6694.5,
+   "tax": 401.67,
+   "total": 7096.17
+  }
+ },
+ {
+  "file": "invoice_03.pdf",
+  "template": "receipt",
+  "scanned": true,
+  "invoice_no": "66669073",
+  "date": "2026-05-03",
+  "seller": "星河示例科技有限公司",
+  "buyer": "安澜模拟电子有限公司",
+  "currency": "CNY",
+  "subtotal": 3654,
+  "tax_rate": 0.06,
+  "tax": 219.24,
+  "total": 3873.24,
+  "items": [
+   {
+    "desc": "无线键鼠套装",
+    "qty": 6,
+    "unit_price": 159,
+    "amount": 954
+   },
+   {
+    "desc": "办公椅",
+    "qty": 6,
+    "unit_price": 450,
+    "amount": 2700
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 3654,
+   "tax": 219.24,
+   "total": 3873.24
+  }
+ },
+ {
+  "file": "invoice_04.pdf",
+  "template": "bilingual",
+  "scanned": false,
+  "invoice_no": "13405927",
+  "date": "2026-05-17",
+  "seller": "北辰示范物流有限公司",
+  "buyer": "启元样例贸易有限公司",
+  "currency": "CNY",
+  "subtotal": 53018,
+  "tax_rate": 0.13,
+  "tax": 6892.34,
+  "total": 59910.34,
+  "items": [
+   {
+    "desc": "激光打印机",
+    "qty": 10,
+    "unit_price": 1899,
+    "amount": 18990
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 20,
+    "unit_price": 568,
+    "amount": 11360
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 12,
+    "unit_price": 300,
+    "amount": 3600
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 12,
+    "unit_price": 389,
+    "amount": 4668
+   },
+   {
+    "desc": "文件柜",
+    "qty": 20,
+    "unit_price": 720,
+    "amount": 14400
+   }
+  ],
+  "planted": "total_mismatch",
+  "printed": {
+   "subtotal": 53018,
+   "tax": 6892.34,
+   "total": 60010.34
+  }
+ },
+ {
+  "file": "invoice_05.pdf",
+  "template": "cn_multipage",
+  "scanned": false,
+  "invoice_no": "65205206",
+  "date": "2026-02-23",
+  "seller": "青禾演示办公用品有限公司",
+  "buyer": "安澜模拟电子有限公司",
+  "currency": "CNY",
+  "subtotal": 136992.0,
+  "tax_rate": 0.13,
+  "tax": 17808.96,
+  "total": 154800.96,
+  "items": [
+   {
+    "desc": "路由器",
+    "qty": 10,
+    "unit_price": 649,
+    "amount": 6490
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 50,
+    "unit_price": 18.8,
+    "amount": 940.0
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 1,
+    "unit_price": 1899,
+    "amount": 1899
+   },
+   {
+    "desc": "路由器",
+    "qty": 1,
+    "unit_price": 649,
+    "amount": 649
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 3,
+    "unit_price": 389,
+    "amount": 1167
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 12,
+    "unit_price": 568,
+    "amount": 6816
+   },
+   {
+    "desc": "文件柜",
+    "qty": 20,
+    "unit_price": 720,
+    "amount": 14400
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 100,
+    "unit_price": 26.5,
+    "amount": 2650.0
+   },
+   {
+    "desc": "文件柜",
+    "qty": 6,
+    "unit_price": 720,
+    "amount": 4320
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 4,
+    "unit_price": 1299,
+    "amount": 5196
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 5,
+    "unit_price": 1899,
+    "amount": 9495
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "路由器",
+    "qty": 12,
+    "unit_price": 649,
+    "amount": 7788
+   },
+   {
+    "desc": "文件柜",
+    "qty": 20,
+    "unit_price": 720,
+    "amount": 14400
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "文件柜",
+    "qty": 10,
+    "unit_price": 720,
+    "amount": 7200
+   },
+   {
+    "desc": "路由器",
+    "qty": 20,
+    "unit_price": 649,
+    "amount": 12980
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 6,
+    "unit_price": 159,
+    "amount": 954
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 2.5,
+    "unit_price": 300,
+    "amount": 750.0
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 12,
+    "unit_price": 568,
+    "amount": 6816
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 50,
+    "unit_price": 18.8,
+    "amount": 940.0
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 12,
+    "unit_price": 159,
+    "amount": 1908
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 12,
+    "unit_price": 300,
+    "amount": 3600
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "路由器",
+    "qty": 12,
+    "unit_price": 649,
+    "amount": 7788
+   },
+   {
+    "desc": "文件柜",
+    "qty": 6,
+    "unit_price": 720,
+    "amount": 4320
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 2,
+    "unit_price": 568,
+    "amount": 1136
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 136992.0,
+   "tax": 17808.96,
+   "total": 154800.96
+  }
+ },
+ {
+  "file": "invoice_06.pdf",
+  "template": "cn_classic",
+  "scanned": false,
+  "invoice_no": "36681370",
+  "date": "2026-06-10",
+  "seller": "青禾演示办公用品有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 15178,
+  "tax_rate": 0.13,
+  "tax": 1973.14,
+  "total": 17151.14,
+  "items": [
+   {
+    "desc": "文件柜",
+    "qty": 20,
+    "unit_price": 720,
+    "amount": 14400
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 2,
+    "unit_price": 389,
+    "amount": 778
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 15178,
+   "tax": 1973.14,
+   "total": 17151.14
+  }
+ },
+ {
+  "file": "invoice_07.pdf",
+  "template": "en_modern",
+  "scanned": true,
+  "invoice_no": "INV-2026-3623",
+  "date": "2026-04-21",
+  "seller": "Northwind Demo Supplies Ltd.",
+  "buyer": "Tailspin Example Labs",
+  "currency": "USD",
+  "subtotal": 5877.0,
+  "tax_rate": 0.06,
+  "tax": 352.62,
+  "total": 6229.62,
+  "items": [
+   {
+    "desc": "Consulting (hours)",
+    "qty": 4,
+    "unit_price": 95,
+    "amount": 380
+   },
+   {
+    "desc": "USB-C dock",
+    "qty": 12,
+    "unit_price": 149.5,
+    "amount": 1794.0
+   },
+   {
+    "desc": "Copy paper, 500 sheets",
+    "qty": 20,
+    "unit_price": 6.4,
+    "amount": 128.0
+   },
+   {
+    "desc": "Office chair",
+    "qty": 20,
+    "unit_price": 120,
+    "amount": 2400
+   },
+   {
+    "desc": "USB-C dock",
+    "qty": 5,
+    "unit_price": 149.5,
+    "amount": 747.5
+   },
+   {
+    "desc": "Desk lamp",
+    "qty": 10,
+    "unit_price": 42.75,
+    "amount": 427.5
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 5877.0,
+   "tax": 352.62,
+   "total": 6229.62
+  }
+ },
+ {
+  "file": "invoice_08.pdf",
+  "template": "receipt",
+  "scanned": false,
+  "invoice_no": "19856055",
+  "date": "2026-04-14",
+  "seller": "星河示例科技有限公司",
+  "buyer": "松石示例咨询有限公司",
+  "currency": "CNY",
+  "subtotal": 5672.0,
+  "tax_rate": 0.06,
+  "tax": 340.32,
+  "total": 6012.32,
+  "items": [
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 4,
+    "unit_price": 568,
+    "amount": 2272
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 100,
+    "unit_price": 26.5,
+    "amount": 2650.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 2.5,
+    "unit_price": 300,
+    "amount": 750.0
+   }
+  ],
+  "planted": "duplicate",
+  "printed": {
+   "subtotal": 5672.0,
+   "tax": 340.32,
+   "total": 6012.32
+  }
+ },
+ {
+  "file": "invoice_09.pdf",
+  "template": "bilingual",
+  "scanned": true,
+  "invoice_no": "53760716",
+  "date": "2026-04-30",
+  "seller": "星河示例科技有限公司",
+  "buyer": "安澜模拟电子有限公司",
+  "currency": "CNY",
+  "subtotal": 7650.0,
+  "tax_rate": 0.13,
+  "tax": 994.5,
+  "total": 8644.5,
+  "items": [
+   {
+    "desc": "办公椅",
+    "qty": 12,
+    "unit_price": 450,
+    "amount": 5400
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   }
+  ],
+  "planted": "subtotal_mismatch",
+  "printed": {
+   "subtotal": 7600.0,
+   "tax": 994.5,
+   "total": 8594.5
+  }
+ },
+ {
+  "file": "invoice_10.pdf",
+  "template": "cn_multipage",
+  "scanned": false,
+  "invoice_no": "80423899",
+  "date": "2026-07-27",
+  "seller": "远帆样例机电设备有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 136629.0,
+  "tax_rate": 0.13,
+  "tax": 17761.77,
+  "total": 154390.77,
+  "items": [
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 10,
+    "unit_price": 26.5,
+    "amount": 265.0
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 20,
+    "unit_price": 26.5,
+    "amount": 530.0
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 20,
+    "unit_price": 389,
+    "amount": 7780
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 4,
+    "unit_price": 300,
+    "amount": 1200
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 3,
+    "unit_price": 1299,
+    "amount": 3897
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 3,
+    "unit_price": 568,
+    "amount": 1704
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 10,
+    "unit_price": 389,
+    "amount": 3890
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 5,
+    "unit_price": 800,
+    "amount": 4000
+   },
+   {
+    "desc": "文件柜",
+    "qty": 10,
+    "unit_price": 720,
+    "amount": 7200
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 20,
+    "unit_price": 389,
+    "amount": 7780
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 10,
+    "unit_price": 1299,
+    "amount": 12990
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 10,
+    "unit_price": 18.8,
+    "amount": 188.0
+   },
+   {
+    "desc": "路由器",
+    "qty": 10,
+    "unit_price": 649,
+    "amount": 6490
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 5,
+    "unit_price": 1899,
+    "amount": 9495
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 3,
+    "unit_price": 568,
+    "amount": 1704
+   },
+   {
+    "desc": "办公椅",
+    "qty": 5,
+    "unit_price": 450,
+    "amount": 2250
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 12,
+    "unit_price": 1299,
+    "amount": 15588
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 100,
+    "unit_price": 26.5,
+    "amount": 2650.0
+   },
+   {
+    "desc": "办公椅",
+    "qty": 5,
+    "unit_price": 450,
+    "amount": 2250
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "办公椅",
+    "qty": 20,
+    "unit_price": 450,
+    "amount": 9000
+   },
+   {
+    "desc": "文件柜",
+    "qty": 12,
+    "unit_price": 720,
+    "amount": 8640
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 2,
+    "unit_price": 1299,
+    "amount": 2598
+   },
+   {
+    "desc": "文件柜",
+    "qty": 20,
+    "unit_price": 720,
+    "amount": 14400
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 136629.0,
+   "tax": 17761.77,
+   "total": 154390.77
+  }
+ },
+ {
+  "file": "invoice_11.pdf",
+  "template": "cn_classic",
+  "scanned": true,
+  "invoice_no": "99979425",
+  "date": "2026-05-24",
+  "seller": "青禾演示办公用品有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 18594,
+  "tax_rate": 0.13,
+  "tax": 2417.22,
+  "total": 21011.22,
+  "items": [
+   {
+    "desc": "激光打印机",
+    "qty": 6,
+    "unit_price": 1899,
+    "amount": 11394
+   },
+   {
+    "desc": "文件柜",
+    "qty": 10,
+    "unit_price": 720,
+    "amount": 7200
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 18594,
+   "tax": 2417.22,
+   "total": 21011.22
+  }
+ },
+ {
+  "file": "invoice_12.pdf",
+  "template": "en_modern",
+  "scanned": false,
+  "invoice_no": "INV-2026-4513",
+  "date": "2026-05-27",
+  "seller": "Harbor Example Logistics Co.",
+  "buyer": "Fabrikam Sample Trading",
+  "currency": "USD",
+  "subtotal": 1151.0,
+  "tax_rate": 0.06,
+  "tax": 69.06,
+  "total": 1220.06,
+  "items": [
+   {
+    "desc": "USB-C dock",
+    "qty": 4,
+    "unit_price": 149.5,
+    "amount": 598.0
+   },
+   {
+    "desc": "Toner cartridge",
+    "qty": 2,
+    "unit_price": 79,
+    "amount": 158
+   },
+   {
+    "desc": "Toner cartridge",
+    "qty": 5,
+    "unit_price": 79,
+    "amount": 395
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 1151.0,
+   "tax": 69.06,
+   "total": 1220.06
+  }
+ },
+ {
+  "file": "invoice_13.pdf",
+  "template": "receipt",
+  "scanned": false,
+  "invoice_no": "19856055",
+  "date": "2026-07-18",
+  "seller": "星河示例科技有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 10564.0,
+  "tax_rate": 0.06,
+  "tax": 633.84,
+  "total": 11197.84,
+  "items": [
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 100,
+    "unit_price": 26.5,
+    "amount": 2650.0
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 3,
+    "unit_price": 1899,
+    "amount": 5697
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 2,
+    "unit_price": 159,
+    "amount": 318
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 1,
+    "unit_price": 1899,
+    "amount": 1899
+   }
+  ],
+  "planted": "duplicate",
+  "printed": {
+   "subtotal": 10564.0,
+   "tax": 633.84,
+   "total": 11197.84
+  }
+ },
+ {
+  "file": "invoice_14.pdf",
+  "template": "bilingual",
+  "scanned": false,
+  "invoice_no": "65249698",
+  "date": "2026-01-08",
+  "seller": "远帆样例机电设备有限公司",
+  "buyer": "安澜模拟电子有限公司",
+  "currency": "CNY",
+  "subtotal": 13057,
+  "tax_rate": 0.13,
+  "tax": 1697.41,
+  "total": 14754.41,
+  "items": [
+   {
+    "desc": "硒鼓",
+    "qty": 3,
+    "unit_price": 389,
+    "amount": 1167
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 5,
+    "unit_price": 1899,
+    "amount": 9495
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 5,
+    "unit_price": 159,
+    "amount": 795
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 2,
+    "unit_price": 800,
+    "amount": 1600
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 13057,
+   "tax": 1697.41,
+   "total": 14754.41
+  }
+ },
+ {
+  "file": "invoice_15.pdf",
+  "template": "cn_multipage",
+  "scanned": true,
+  "invoice_no": "26466530",
+  "date": "2026-06-12",
+  "seller": "星河示例科技有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 111239.0,
+  "tax_rate": 0.13,
+  "tax": 14461.07,
+  "total": 125700.07,
+  "items": [
+   {
+    "desc": "显示器 27英寸",
+    "qty": 2,
+    "unit_price": 1299,
+    "amount": 2598
+   },
+   {
+    "desc": "办公椅",
+    "qty": 6,
+    "unit_price": 450,
+    "amount": 2700
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 20,
+    "unit_price": 159,
+    "amount": 3180
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 5,
+    "unit_price": 1899,
+    "amount": 9495
+   },
+   {
+    "desc": "激光打印机",
+    "qty": 10,
+    "unit_price": 1899,
+    "amount": 18990
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 50,
+    "unit_price": 18.8,
+    "amount": 940.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 2.5,
+    "unit_price": 300,
+    "amount": 750.0
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 10,
+    "unit_price": 389,
+    "amount": 3890
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 1,
+    "unit_price": 800,
+    "amount": 800
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 5,
+    "unit_price": 800,
+    "amount": 4000
+   },
+   {
+    "desc": "文件柜",
+    "qty": 6,
+    "unit_price": 720,
+    "amount": 4320
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 5,
+    "unit_price": 389,
+    "amount": 1945
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 10,
+    "unit_price": 18.8,
+    "amount": 188.0
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 50,
+    "unit_price": 18.8,
+    "amount": 940.0
+   },
+   {
+    "desc": "路由器",
+    "qty": 10,
+    "unit_price": 649,
+    "amount": 6490
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 6,
+    "unit_price": 389,
+    "amount": 2334
+   },
+   {
+    "desc": "办公椅",
+    "qty": 1,
+    "unit_price": 450,
+    "amount": 450
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 20,
+    "unit_price": 568,
+    "amount": 11360
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 6,
+    "unit_price": 800,
+    "amount": 4800
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 4,
+    "unit_price": 389,
+    "amount": 1556
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 20,
+    "unit_price": 1299,
+    "amount": 25980
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 1,
+    "unit_price": 389,
+    "amount": 389
+   },
+   {
+    "desc": "文件柜",
+    "qty": 2,
+    "unit_price": 720,
+    "amount": 1440
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 3,
+    "unit_price": 568,
+    "amount": 1704
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 111239.0,
+   "tax": 14461.07,
+   "total": 125700.07
+  }
+ },
+ {
+  "file": "invoice_16.pdf",
+  "template": "cn_classic",
+  "scanned": false,
+  "invoice_no": "61553823",
+  "date": "2026-04-21",
+  "seller": "云杉模拟信息服务有限公司",
+  "buyer": "启元样例贸易有限公司",
+  "currency": "CNY",
+  "subtotal": 3599.0,
+  "tax_rate": 0.13,
+  "tax": 467.87,
+  "total": 4066.87,
+  "items": [
+   {
+    "desc": "硒鼓",
+    "qty": 1,
+    "unit_price": 389,
+    "amount": 389
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 20,
+    "unit_price": 18.8,
+    "amount": 376.0
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 6,
+    "unit_price": 159,
+    "amount": 954
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 3599.0,
+   "tax": 467.87,
+   "total": 4066.87
+  }
+ },
+ {
+  "file": "invoice_17.pdf",
+  "template": "en_modern",
+  "scanned": false,
+  "invoice_no": "INV-2026-3419",
+  "date": null,
+  "seller": "Northwind Demo Supplies Ltd.",
+  "buyer": "Contoso Demo Manufacturing",
+  "currency": "USD",
+  "subtotal": 1099.0,
+  "tax_rate": 0.06,
+  "tax": 65.94,
+  "total": 1164.94,
+  "items": [
+   {
+    "desc": "Copy paper, 500 sheets",
+    "qty": 10,
+    "unit_price": 6.4,
+    "amount": 64.0
+   },
+   {
+    "desc": "Copy paper, 500 sheets",
+    "qty": 100,
+    "unit_price": 6.4,
+    "amount": 640.0
+   },
+   {
+    "desc": "Toner cartridge",
+    "qty": 5,
+    "unit_price": 79,
+    "amount": 395
+   }
+  ],
+  "planted": "missing_date",
+  "printed": {
+   "subtotal": 1099.0,
+   "tax": 65.94,
+   "total": 1164.94
+  }
+ },
+ {
+  "file": "invoice_18.pdf",
+  "template": "receipt",
+  "scanned": true,
+  "invoice_no": "94124685",
+  "date": "2026-02-09",
+  "seller": "北辰示范物流有限公司",
+  "buyer": "明湖演示制造有限公司",
+  "currency": "CNY",
+  "subtotal": 7008,
+  "tax_rate": 0.06,
+  "tax": 420.48,
+  "total": 7428.48,
+  "items": [
+   {
+    "desc": "文件柜",
+    "qty": 5,
+    "unit_price": 720,
+    "amount": 3600
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 6,
+    "unit_price": 568,
+    "amount": 3408
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 7008,
+   "tax": 420.48,
+   "total": 7428.48
+  }
+ },
+ {
+  "file": "invoice_19.pdf",
+  "template": "bilingual",
+  "scanned": true,
+  "invoice_no": "98297510",
+  "date": "2026-01-19",
+  "seller": "星河示例科技有限公司",
+  "buyer": "启元样例贸易有限公司",
+  "currency": "CNY",
+  "subtotal": 3190.0,
+  "tax_rate": 0.13,
+  "tax": 414.7,
+  "total": 3604.7,
+  "items": [
+   {
+    "desc": "白板笔 10支装",
+    "qty": 50,
+    "unit_price": 18.8,
+    "amount": 940.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   }
+  ],
+  "planted": null,
+  "printed": {
+   "subtotal": 3190.0,
+   "tax": 414.7,
+   "total": 3604.7
+  }
+ },
+ {
+  "file": "invoice_20.pdf",
+  "template": "cn_multipage",
+  "scanned": false,
+  "invoice_no": "62239125",
+  "date": "2026-07-11",
+  "seller": "远帆样例机电设备有限公司",
+  "buyer": "松石示例咨询有限公司",
+  "currency": "CNY",
+  "subtotal": 88983.0,
+  "tax_rate": 0.13,
+  "tax": 11567.79,
+  "total": 100550.79,
+  "items": [
+   {
+    "desc": "白板笔 10支装",
+    "qty": 100,
+    "unit_price": 18.8,
+    "amount": 1880.0
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 12,
+    "unit_price": 300,
+    "amount": 3600
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 10,
+    "unit_price": 26.5,
+    "amount": 265.0
+   },
+   {
+    "desc": "路由器",
+    "qty": 6,
+    "unit_price": 649,
+    "amount": 3894
+   },
+   {
+    "desc": "网线 CAT6 305米",
+    "qty": 20,
+    "unit_price": 568,
+    "amount": 11360
+   },
+   {
+    "desc": "路由器",
+    "qty": 10,
+    "unit_price": 649,
+    "amount": 6490
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 1,
+    "unit_price": 800,
+    "amount": 800
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 3,
+    "unit_price": 1299,
+    "amount": 3897
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 7.5,
+    "unit_price": 300,
+    "amount": 2250.0
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 6,
+    "unit_price": 159,
+    "amount": 954
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 20,
+    "unit_price": 800,
+    "amount": 16000
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 5,
+    "unit_price": 1299,
+    "amount": 6495
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 3,
+    "unit_price": 800,
+    "amount": 2400
+   },
+   {
+    "desc": "会议服务费",
+    "qty": 2,
+    "unit_price": 800,
+    "amount": 1600
+   },
+   {
+    "desc": "文件柜",
+    "qty": 1,
+    "unit_price": 720,
+    "amount": 720
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 20,
+    "unit_price": 18.8,
+    "amount": 376.0
+   },
+   {
+    "desc": "文件柜",
+    "qty": 5,
+    "unit_price": 720,
+    "amount": 3600
+   },
+   {
+    "desc": "技术支持服务(小时)",
+    "qty": 12,
+    "unit_price": 300,
+    "amount": 3600
+   },
+   {
+    "desc": "文件柜",
+    "qty": 10,
+    "unit_price": 720,
+    "amount": 7200
+   },
+   {
+    "desc": "白板笔 10支装",
+    "qty": 20,
+    "unit_price": 18.8,
+    "amount": 376.0
+   },
+   {
+    "desc": "硒鼓",
+    "qty": 20,
+    "unit_price": 389,
+    "amount": 7780
+   },
+   {
+    "desc": "无线键鼠套装",
+    "qty": 2,
+    "unit_price": 159,
+    "amount": 318
+   },
+   {
+    "desc": "显示器 27英寸",
+    "qty": 2,
+    "unit_price": 1299,
+    "amount": 2598
+   },
+   {
+    "desc": "A4打印纸 500张/包",
+    "qty": 20,
+    "unit_price": 26.5,
+    "amount": 530.0
+   }
+  ],
+  "planted": "tax_mismatch",
+  "printed": {
+   "subtotal": 88983.0,
+   "tax": 11655.79,
+   "total": 100638.79
+  }
+ }
+]

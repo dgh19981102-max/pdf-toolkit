@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-toolkit"
+version = "0.2.0"
+description = "Local PDF toolkit: keyword search over many PDFs (with OCR for scans) and invoice-to-Excel extraction with reconciliation."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["pymupdf>=1.23", "openpyxl>=3.1", "pillow>=10", "numpy>=1.24", "flask>=3.0"]
+
+[project.optional-dependencies]
+demo = ["reportlab>=4", "pytest"]
+
+[project.scripts]
+pdftool = "pdftoolkit.cli:main"
+
+[tool.setuptools]
+packages = ["pdftoolkit", "pdftoolkit.search", "pdftoolkit.invoices"]
+
+[tool.setuptools.package-data]
+pdftoolkit = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+*.db
+*.db-wal
+*.db-shm
+uploads/
+exports/
+bench/
+~$*.xlsx

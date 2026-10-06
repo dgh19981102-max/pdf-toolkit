@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}发票转 Excel · PDF 工具箱{% endblock %}
+{% block content %}
+  <h1>发票转 Excel</h1>
+  <div class="muted">批量识别 PDF 发票（文字版和扫描件均可），自动核对金额，生成带"待复核"清单的 Excel。</div>
+
+  <details open>
+    <summary>选择发票</summary>
+    <div class="row">
+      <input type="text" id="folder" placeholder="本机文件夹路径，例如 D:\发票\2026-03 或 /home/me/invoices">
+      <button onclick="go(startFolder('/invoices', extra()))">处理文件夹</button>
+    </div>
+    <div class="row">
+      <input type="file" id="files" accept=".pdf" multiple>
+      <button class="ghost" onclick="go(startUpload('/invoices', 'files', extra(), say))">上传并处理</button>
+      <input type="file" id="dir" webkitdirectory multiple style="display:none"
+             onchange="go(startUpload('/invoices', 'dir', extra(), say))">
+      <button class="ghost" onclick="document.getElementById('dir').click()">上传整个文件夹</button>
+    </div>
+    <label class="opt"><input type="checkbox" id="also_index" checked>同时加入关键词搜索索引（之后可按品名、公司名搜到发票）</label>
+    <div id="job" class="muted" style="margin-top:8px"></div>
+    <progress id="bar" value="0" max="1" hidden></progress>
+  </details>
+
+  <div id="result"></div>
+{% endblock %}
+{% block script %}
+<script>
+const job = document.getElementById('job'), bar = document.getElementById('bar');
+const result = document.getElementById('result');
+const say = t => { job.textContent = t; };
+const extra = () => ({also_index: document.getElementById('also_index').checked ? '1' : '0'});
+const money = v => v == null ? '' : Number(v).toLocaleString('zh-CN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+async function go(started) {
+  const res = await started;
+  if (!res) return;
+  if (!res.ok) { say(res.message || '已有任务在运行，请稍候'); return; }
+  result.innerHTML = '';
+  bar.hidden = false;
+  watch();
+}
+
+function watch() {
+  poll('/invoices', s => {
+    bar.max = Math.max(s.total, 1); bar.value = s.done;
+    say(s.total ? `${s.stage} ${s.done}/${s.total}：${s.current}` : `${s.stage || '准备中'}…`);
+  }, show);
+}
+
+function show(r) {
+  bar.hidden = true;
+  if (r.error) { say(`处理失败：${r.error}`); return; }
+  say(`完成，用时 ${r.seconds} 秒` + (r.indexed ? `；已加入搜索索引（新增 ${r.indexed.indexed} 个）` : ''));
+  const tiles = [['发票', r.invoices], ['扫描件 OCR', r.ocr], ['通过', r.passed],
+                 ['待复核', r.review], ['问题条数', r.issues]];
+  let h = `<div class="tiles">${tiles.map(([k, v]) => `<div class="tile"><b>${v}</b><span>${k}</span></div>`).join('')}</div>`;
+  h += `<p><a class="button" href="/invoices/download/${encodeURIComponent(r.download)}">下载 Excel：${esc(r.download)}</a></p>`;
+  if (r.failures.length) h += `<p class="err">无法读取：${r.failures.map(esc).join('；')}</p>`;
+  if (r.problems.length) {
+    h += `<h2>待复核（${r.problems.length}）</h2><div class="tablewrap"><table><tr><th>文件</th><th>级别</th><th>类型</th><th>说明</th><th>识别值</th><th>参考值</th></tr>`;
+    for (const p of r.problems)
+      h += `<tr><td>${esc(p.file)}</td><td><span class="tag ${p.severity === '错误' ? 'error' : 'hint'}">${esc(p.severity)}</span></td>` +
+           `<td style="white-space:nowrap">${esc(p.kind)}</td><td>${esc(p.detail)}</td><td>${esc(p.found)}</td><td>${esc(p.expected)}</td></tr>`;
+    h += `</table></div>`;
+  }
+  h += `<h2>发票汇总</h2><div class="tablewrap"><table><tr><th>文件</th><th>发票号码</th><th>日期</th><th>销售方</th><th>币种</th><th>价税合计</th><th>方式</th><th>状态</th></tr>`;
+  for (const x of r.rows)
+    h += `<tr><td>${esc(x.file)}</td><td>${esc(x.invoice_no)}</td><td>${esc(x.date)}</td><td>${esc(x.seller)}</td>` +
+         `<td>${esc(x.currency)}</td><td class="num">${money(x.total)}</td><td>${x.method === 'ocr' ? 'OCR' : '文字层'}</td>` +
+         `<td><span class="tag ${x.status === '通过' ? 'ok' : 'review'}">${esc(x.status)}</span></td></tr>`;
+  h += `</table></div>`;
+  result.innerHTML = h;
+}
+
+// show the last result (or the running job) when the page is opened
+{% if state.running %}bar.hidden = false; watch();{% elif state.report %}show({{ state.report|tojson }});{% endif %}
+</script>
+{% endblock %}
